@@ -1,0 +1,4 @@
+uart_fixed_len_recv.h:23:2:UartFixedLen::UartFixedLen(UART_HandleTypeDef*)	16	static
+uart_flex_len_recv.h:17:2:UartFlexLen::UartFlexLen(UART_HandleTypeDef*)	16	static
+app.cpp:15:6:void AppInit()	16	static
+app.cpp:21:6:void AppLoop()	4	static

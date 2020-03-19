@@ -1,0 +1,2 @@
+uart_flex_len_recv.cpp:9:6:void UartFlexLen::Start()	16	static
+uart_flex_len_recv.cpp:46:6:void UartFlexLen::Stop()	16	static

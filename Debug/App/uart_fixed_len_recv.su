@@ -1,0 +1,3 @@
+uart_fixed_len_recv.cpp:12:6:bool UartFixedLen::WriteAndRead(uint16_t)	32	static
+uart_fixed_len_recv.cpp:38:6:void UartFixedLen::BuildFrame()	24	static
+uart_fixed_len_recv.cpp:46:9:uint8_t UartFixedLen::GetCrc(void*)	32	static
