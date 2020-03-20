@@ -1,6 +1,21 @@
 # STM32_CppDriver
 Cpp Driver for STM32, build with STM32CubeIDE
 
+## 环境
+- STM32CubeIDE
+- STM32F103
+- C/C++
+
+## 程序结构
+1. STM32Cube自动生成Core部分代码，main中添加AppInit()和AppLoop()，重新配置芯片引脚自动生成代码完全不影响用户程序。
+2. 用户代码全部放在App目录，AppLoop（）是用户主循环。
+3. 驱动部分c++封装。
+
+## 驱动模块
+- [x] ADC DMA 多通道采集
+- [x] CAN 
+- [x] UART 
+- [x] TIM 测脉宽
 
 ## UART
 ### 定长接收
@@ -37,4 +52,5 @@ Cpp Driver for STM32, build with STM32CubeIDE
 - 接收处理时间必须小于下个数据到来时间，否则会出现数据覆盖。
 
 #### 4. 优势
-- 严格的数据协议判定
+- 严格的数据协议判定，保证数据完全符合协议约定。
+- 适应不定长数据

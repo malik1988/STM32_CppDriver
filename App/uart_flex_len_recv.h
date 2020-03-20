@@ -21,7 +21,7 @@ public:
 	{
 
 	}
-	inline void IrqHandler();
+	void IrqHandler();
 	inline int Read(uint8_t *outData)
 	{
 		int len = 0;

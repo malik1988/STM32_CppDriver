@@ -11,7 +11,7 @@ void UartFlexLen::Start()
 	HAL_UART_Receive_DMA(_uart, _data, sizeof(_data));
 
 }
-void UartFlexLen::IrqHandler()
+inline void UartFlexLen::IrqHandler()
 {
 	switch (_state)
 	{
