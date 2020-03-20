@@ -12,7 +12,7 @@ extern "C"
 {
 #endif
 
-
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
 void AppInit();
 
 void AppLoop();

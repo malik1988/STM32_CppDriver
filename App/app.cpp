@@ -12,6 +12,14 @@
 UartFixedLen *pUartFixed;
 UartFlexLen *pUartFlex;
 
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart == &huart1)
+		pUartFixed->IrqHandler();
+	else if (huart == &huart2)
+		pUartFlex->IrqHandler();
+}
+
 void AppInit()
 {
 	pUartFixed = new UartFixedLen(&huart1);
