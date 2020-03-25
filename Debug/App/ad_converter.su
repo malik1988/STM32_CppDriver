@@ -1,0 +1,2 @@
+ad_converter.cpp:8:1:AdConverter::AdConverter(ADC_HandleTypeDef&)	24	static
+ad_converter.cpp:15:10:uint16_t AdConverter::GetValue(Ad_channel_t)	24	static

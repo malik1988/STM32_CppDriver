@@ -1,0 +1,4 @@
+com_can.cpp:10:1:ComCan::ComCan(CAN_HandleTypeDef&)	64	static
+com_can.cpp:45:14:ComCan_Msg_t ComCan::GetValue()	16	static
+com_can.cpp:56:6:void ComCan::IrqHandler()	48	static
+com_can.cpp:70:6:void ComCan::SendCmd()	48	static

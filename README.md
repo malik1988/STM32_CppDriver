@@ -54,3 +54,6 @@ Cpp Driver for STM32, build with STM32CubeIDE
 #### 4. 优势
 - 严格的数据协议判定，保证数据完全符合协议约定。
 - 适应不定长数据
+
+## CircleBuffer
+循环缓冲
