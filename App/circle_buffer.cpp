@@ -20,9 +20,9 @@ CircleBuffer<T>::CircleBuffer(int size) :
 }
 
 template<typename T>
-T CircleBuffer<T>::Pop()
+inline T CircleBuffer<T>::Pop()
 {
-	T v;
+	T v = T();
 	if (_indexRead == _indexWrite)
 	{ //空
 	}
@@ -35,7 +35,7 @@ T CircleBuffer<T>::Pop()
 }
 
 template<typename T>
-void CircleBuffer<T>::Pop(T *list, int size)
+inline void CircleBuffer<T>::Pop(T *list, int size)
 {
 
 	for (int i = 0; i < size && _indexRead != _indexWrite;
@@ -45,7 +45,7 @@ void CircleBuffer<T>::Pop(T *list, int size)
 	}
 }
 template<typename T>
-void CircleBuffer<T>::Push(const T &v)
+inline void CircleBuffer<T>::Push(const T &v)
 {
 	if ((_indexWrite + 1) % _size == _indexRead)
 	{ //满
@@ -58,7 +58,7 @@ void CircleBuffer<T>::Push(const T &v)
 	}
 }
 template<typename T>
-void CircleBuffer<T>::Push(const T *list, int size)
+inline void CircleBuffer<T>::Push(const T *list, int size)
 {
 	for (int i = 0; i < size && (_indexWrite + 1) % _size != _indexRead;
 			i++, _indexWrite = (_indexWrite + 1) % _size)

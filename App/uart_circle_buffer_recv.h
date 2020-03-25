@@ -13,12 +13,12 @@
 #define UART_CIRCLE_BUFFER_SIZE (80)
 class UartCircle
 {
-
 public:
-	UartCircle();
-
+	UartCircle(UART_HandleTypeDef &uart);
+	void IrqHandler();
 private:
 	CircleBuffer<uint8_t> _buf;
+	UART_HandleTypeDef &_uart;
 };
 
 

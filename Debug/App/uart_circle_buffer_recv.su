@@ -1,1 +1,2 @@
 uart_circle_buffer_recv.cpp:9:1:UartCircle::UartCircle()	16	static
+uart_circle_buffer_recv.cpp:16:6:void UartCircle::IrqHandler()	16	static

@@ -14,6 +14,9 @@ class CircleBuffer
 
 public:
 	CircleBuffer(int size = 10);
+	CircleBuffer(const CircleBuffer &c) = delete;
+	CircleBuffer operator=(const CircleBuffer &c) = delete;
+	~CircleBuffer();
 	T Pop();
 	void Pop(T *list, int size);
 	void Push(const T &v);
