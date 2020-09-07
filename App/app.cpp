@@ -48,4 +48,6 @@ void AppLoop()
 	pComCan->SendCmd();
 
 	HAL_Delay(100);
+
+	SCB->VTOR=FLASH_BASE|0x200;
 }

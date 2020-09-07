@@ -2,6 +2,8 @@
 "App/app.o"
 "App/circle_buffer.o"
 "App/com_can.o"
+"App/iap.o"
+"App/retarget_printf.o"
 "App/tim_capture.o"
 "App/uart_circle_buffer_recv.o"
 "App/uart_fixed_len_recv.o"
